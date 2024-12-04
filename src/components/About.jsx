@@ -21,15 +21,15 @@ const aboutDatas = [
 ];
 const About = () => {
   return (
-    <section className="mt-40 md:mt-60">
+    <section className="mt-60 md:mt-64">
       <div className="title py-4 text-center text-3xl font-extrabold">
         About Us
       </div>
       <div className="about-us m-auto lg:max-w-[80%]">
-        {aboutDatas.map((item) => (
+        {aboutDatas.map((item, index) => (
           <div
             key={item.id}
-            className="about-content mx-6 flex items-center justify-between"
+            className={`about-content mx-6 my-10 flex items-center ${index % 2 != 0 ? `flex-row-reverse` : ``} justify-between`}
           >
             <div className="about-content-left mt-20">
               <div className="about-content-title p-2 text-2xl font-semibold">

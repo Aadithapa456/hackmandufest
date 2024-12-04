@@ -31,20 +31,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="border-gray-200 bg-white">
+    <nav className="border-gray-200 bg-white p-4">
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
         <a
           href="https://flowbite.com/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img
-            src="https://media.discordapp.net/attachments/1275803991804084258/1313810975098404956/468002467_553604870800458_5676005260973667869_n.png?ex=67517d51&is=67502bd1&hm=22dcead101685baf339b2a3151c01747df13d51103139cc5045af431fc5e7f96&=&format=webp&quality=lossless"
-            className="h-8"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center whitespace-nowrap text-2xl font-semibold">
-            HackamanduFest
-          </span>
+          <img src="src/assets/logo.jpg" alt="Flowbite Logo" className="w-28" />
         </a>
         <button
           data-collapse-toggle="navbar-default"

@@ -13,8 +13,12 @@ const Footer = () => {
         </p>
         <p>&copy; 2024 Hackmandufest</p>
         <div className="contact-section flex gap-5">
-          <FaInstagram className="cursor-pointer text-2xl transition-transform hover:scale-125 hover:text-red-400" />
-          <FaDiscord className="cursor-pointer text-2xl transition-transform hover:scale-125 hover:text-blue-800" />
+          <a href="">
+            <FaInstagram className="cursor-pointer text-2xl transition-transform hover:scale-125 hover:text-red-400" />
+          </a>
+          <a href="https://discord.gg/XkJCwJdGxv" target="_blank">
+            <FaDiscord className="cursor-pointer text-2xl transition-transform hover:scale-125 hover:text-blue-800" />
+          </a>
         </div>
       </div>
     </footer>
